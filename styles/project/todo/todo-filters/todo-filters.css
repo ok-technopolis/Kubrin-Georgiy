@@ -1,0 +1,14 @@
+.todo-filters {
+    align-self: center;
+    overflow: hidden;
+    width: 33.33%;
+    order: 2;
+    flex: 1 3;
+}
+
+.todo-filter {
+    text-align: center;
+    font-size: 12pt;
+	background: #FFFFFF;
+    margin: 12px;
+}
