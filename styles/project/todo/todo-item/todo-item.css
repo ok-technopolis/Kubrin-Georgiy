@@ -1,0 +1,33 @@
+.todo-item {
+    border-bottom: 1px solid #E6E6E6;
+    overflow: hidden;
+    display: flex;
+    margin: 0 0 1px 0;
+}
+
+.todo-item_text {
+    font-family: "Arial" serif;
+    font-size: 20pt;
+    background: #FFF;
+    overflow-y: visible;
+    resize: both;
+    align-self: center; flex: 1 2; order: 2;
+}
+
+.todo-item_ready-mark {
+    align-self: center; order: 1;
+}
+
+.todo-item_remove {
+    background:url(../../../../icons/close.png);
+	background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    border: 0;
+    display: none;
+    align-self: center; order: 3;
+}
+
+.todo-item:hover > .todo-item_remove {
+    display: block;
+}
