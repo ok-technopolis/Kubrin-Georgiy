@@ -4,14 +4,20 @@
         <meta charset="utf-8">
         <title>TODO</title>
         <meta name="description" content="Todos web manager.">
+        <link rel="stylesheet" type="text/css" href="styles/project/todo/todo-body/todo-body.css">
+        <link rel="stylesheet" type="text/css" href="styles/project/todo/todo-item/todo-item.css">
+        <link rel="stylesheet" type="text/css" href="styles/project/todo/todo-header/todo-header.css">
+        <link rel="stylesheet" type="text/css" href="styles/project/todo/todo-list/todo-list.css">
+        <link rel="stylesheet" type="text/css" href="styles/project/todo/todos-add/todos-add.css">
+        <link rel="stylesheet" type="text/css" href="styles/project/todo/todo-actions-bar/todo-actions-bar.css">
+        <link rel="stylesheet" type="text/css" href="styles/project/todo/todo-filters/todo-filters.css">
     </head>
     
     <body>
-        <div class="todo-body">
-            <div class="todo-header">
-                <h1 class="todos-title">todos</h1>
-            </div>
-            
+        <div class="todo-header">
+            <div class="todos-title">todos</div>
+        </div>
+        <div class="todo-body">    
             <div class="todos-add">
                 <button class="todo-add_select-all" aria-label="Отметить все как выполненые"></button>
                 <textarea class="todo-add_input" placeholder="What needs to be done?" aria-label="Добавить запись"></textarea>
@@ -19,27 +25,27 @@
                 
             <div class="todo-list">
                 <div class="todo-item">
-                    <textarea class="todo-text" aria-label="Ввести текст">HTML</textarea>
+                    <textarea class="todo-item_text" aria-label="Ввести текст">HTML</textarea>
                     <input class="todo-item_ready-mark" type="checkbox" aria-label="Отметить как выполненое">
-                    <button class="todo-item_remove" aria-label="Удалить запись">Delete</button>
+                    <button class="todo-item_remove" aria-label="Удалить запись"></button>
                 </div>
                 
                 <div class="todo-item __ready">
-                    <textarea class="todo-text" aria-label="Ввести текст">CSS</textarea>
+                    <textarea class="todo-item_text" aria-label="Ввести текст">CSS</textarea>
                     <input class="todo-item_ready-mark" type="checkbox" checked="checked" aria-label="Отметить как не выполненое">
-                    <button class="todo-item_remove" aria-label="Удалить запись">Delete</button>
+                    <button class="todo-item_remove" aria-label="Удалить запись"></button>
                 </div>
                 
                 <div class="todo-item">
-                    <textarea class="todo-text" aria-label="Ввести текст">JS</textarea>
+                    <textarea class="todo-item_text" aria-label="Ввести текст">JS</textarea>
                     <input class="todo-item_ready-mark" type="checkbox" aria-label="Отметить как выполненое">
-                    <button class="todo-item_remove" aria-label="Удалить запись">Delete</button>
+                    <button class="todo-item_remove" aria-label="Удалить запись"></button>
                 </div>
                     
                 <div class="todo-item">
-                    <textarea class="todo-text" aria-label="Ввести текст">JS tools</textarea>
+                    <textarea class="todo-item_text" aria-label="Ввести текст">JS tools</textarea>
                     <input class="todo-item_ready-mark" type="checkbox" aria-label="Отметить как выполненое">
-                    <button class="todo-item_remove" aria-label="Удалить запись">Delete</button>
+                    <button class="todo-item_remove" aria-label="Удалить запись"></button>
                 </div>
             </div>
                 
@@ -51,9 +57,12 @@
                     <a class="todo-filter" href="#" data-filter="active" aria-label="Выбрать текущие">Active</a>
                     <a class="todo-filter" href="#" data-filter="completed" aria-label="Выбрать завершенные">Completed</a>
                 </div>
+                
+                <button class="todo-actions-bar_clear-completed" aria-label="Отчистить все выполненые">Clear completed</button>
             </div>
             
-            <button class="todo-actions-bar_clear-completed" aria-label="Отчистить все выполненые"></button>
         </div>
+        <div class="todo-sublayer1"></div>
+        <div class="todo-sublayer2"></div>
     </body>
 </html>
