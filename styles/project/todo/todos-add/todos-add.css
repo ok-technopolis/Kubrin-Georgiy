@@ -1,5 +1,4 @@
 .todos-add {
-    display: flex;
     overflow: hidden;
 }
 
@@ -7,17 +6,17 @@
     background: url(../../../../icons/select-all.png);
     background-repeat: no-repeat;
     border: 0;
-    align-self: flex-start;
     height: 12px;
     width: 24px;
     margin: 28px 18px 24px 18px;
-    order: 1;
+    float: left;
 }
 
 .todo-add_input {
     font-family: "Arial" serif;
     font-size: 20pt;
-    align-self: center;
-    flex: 1 2;
-    order: 2;
+    width: 480px;
+    overflow: hidden;
+    position: relative;
+    float: right;
 }

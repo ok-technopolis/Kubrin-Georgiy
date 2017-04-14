@@ -26,25 +26,41 @@
             <div class="todo-list">
                 <div class="todo-item">
                     <textarea class="todo-item_text" aria-label="Ввести текст">HTML</textarea>
-                    <input class="todo-item_ready-mark" type="checkbox" aria-label="Отметить как выполненое">
+                    <div class="todo-item_checkbox">
+                        <input class="todo-item_checkbox_target" type="checkbox" aria-label="Отметить как выполненое">
+                        <div class="todo-item_checkbox_visual">
+                        </div>
+                    </div>
                     <button class="todo-item_remove" aria-label="Удалить запись"></button>
                 </div>
                 
                 <div class="todo-item __ready">
                     <textarea class="todo-item_text" aria-label="Ввести текст">CSS</textarea>
-                    <input class="todo-item_ready-mark" type="checkbox" checked="checked" aria-label="Отметить как не выполненое">
+                    <div class="todo-item_checkbox">
+                        <input class="todo-item_checkbox_target" type="checkbox" checked="checked" aria-label="Отметить как не выполненое">
+                        <div class="todo-item_checkbox_visual __checked">
+                        </div>
+                    </div>
                     <button class="todo-item_remove" aria-label="Удалить запись"></button>
                 </div>
                 
                 <div class="todo-item">
                     <textarea class="todo-item_text" aria-label="Ввести текст">JS</textarea>
-                    <input class="todo-item_ready-mark" type="checkbox" aria-label="Отметить как выполненое">
+                    <div class="todo-item_checkbox">
+                        <input class="todo-item_checkbox_target" type="checkbox" aria-label="Отметить как выполненое">
+                        <div class="todo-item_checkbox_visual">
+                        </div>
+                    </div>
                     <button class="todo-item_remove" aria-label="Удалить запись"></button>
                 </div>
                     
                 <div class="todo-item">
                     <textarea class="todo-item_text" aria-label="Ввести текст">JS tools</textarea>
-                    <input class="todo-item_ready-mark" type="checkbox" aria-label="Отметить как выполненое">
+                    <div class="todo-item_checkbox">
+                        <input class="todo-item_checkbox_target" type="checkbox" aria-label="Отметить как выполненое">
+                        <div class="todo-item_checkbox_visual">
+                        </div>
+                    </div>
                     <button class="todo-item_remove" aria-label="Удалить запись"></button>
                 </div>
             </div>
@@ -52,17 +68,15 @@
             <div class="todo-actions-bar">
                 <div class="todo-actions-bar_counter" aria-label="Счетчик невыполненых">3 items left</div>
                 
-                <div class="todo-filters" aria-label="Меню фильтров">
-                    <a class="todo-filter __active" href="#" data-filter="all" aria-label="Выбрать все">All</a>
-                    <a class="todo-filter" href="#" data-filter="active" aria-label="Выбрать текущие">Active</a>
-                    <a class="todo-filter" href="#" data-filter="completed" aria-label="Выбрать завершенные">Completed</a>
-                </div>
+                <a class="todo-filter __active" href="#" data-filter="all" aria-label="Выбрать все">All</a>
+                <a class="todo-filter" href="#" data-filter="active" aria-label="Выбрать текущие">Active</a>
+                <a class="todo-filter" href="#" data-filter="completed" aria-label="Выбрать завершенные">Completed</a>
                 
-                <button class="todo-actions-bar_clear-completed" aria-label="Отчистить все выполненые">Clear completed</button>
+                <button class="todo-actions-bar_clear-completed" aria-label="Отчистить все выполненые"><div>Clear completed</div></button>
             </div>
             
         </div>
-        <div class="todo-sublayer1"></div>
-        <div class="todo-sublayer2"></div>
+        <div class="todo-body __sublayer1"></div>
+        <div class="todo-body __sublayer2"></div>
     </body>
 </html>

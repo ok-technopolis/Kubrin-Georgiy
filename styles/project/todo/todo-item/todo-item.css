@@ -3,19 +3,56 @@
     overflow: hidden;
     display: flex;
     margin: 0 0 1px 0;
+    height: 60px;
 }
 
 .todo-item_text {
     font-family: "Arial" serif;
     font-size: 20pt;
+    overflow: hidden;
+    resize: none;
+    border: none;
     background: #FFF;
     overflow-y: visible;
     resize: both;
-    align-self: center; flex: 1 2; order: 2;
+    align-self: center; flex: 1 3; order: 2;
 }
 
-.todo-item_ready-mark {
+.todo-item_checkbox {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin: 5px 5px 5px 5px;
+    float: left;
     align-self: center; order: 1;
+}
+
+.todo-item_checkbox_target {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.todo-item_checkbox_visual {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 50%;
+    border: 1px solid #E6E6E6;
+}
+
+.__checked {
+    background:url(../../../../icons/completed.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid green;
 }
 
 .todo-item_remove {
@@ -23,11 +60,19 @@
 	background-repeat: no-repeat;
     height: 18px;
     width: 18px;
+    margin-right: 12px;
+    margin-left: 12px;
     border: 0;
     display: none;
+    float: right;
     align-self: center; order: 3;
+}
+
+.todo-item_checkbox_target:checked > .todo-item_checkbox_visual {
+    
 }
 
 .todo-item:hover > .todo-item_remove {
     display: block;
 }
+
