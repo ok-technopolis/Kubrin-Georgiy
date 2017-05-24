@@ -1,0 +1,10 @@
+@import "../../config/globals";
+
+.title {
+    font-size: $fs_x-large;
+    line-height: $lh_x-large;
+    margin: $offset_2x;
+    padding: $offset;
+    // test
+    background: url('../../../images/icons/favorites-off.png');
+    }
