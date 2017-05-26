@@ -32,6 +32,9 @@ $c-checkbox-animation-time: .2s;
         .input-checkbox_target:checked ~ .input-checkbox_visual {
             border-color: $c-checkbox-active;
             }
+        .input-checkbox_target:focus ~ .input-checkbox_visual {
+            border-color: $c-checkbox-active;
+            }
 
         .input-checkbox_visual_icon {
             position: absolute;

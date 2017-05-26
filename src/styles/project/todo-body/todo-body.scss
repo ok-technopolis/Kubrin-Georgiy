@@ -16,7 +16,7 @@
     }
 
     .__sublayer2 {
-        width: $main-wrapper-width - $offset;
+        width: $main-wrapper-width - $offset -  $offset;
         height: $offset;
         z-index: 1;
     }

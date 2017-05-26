@@ -127,6 +127,10 @@ input.action_target {
   border-color: #5dc2af;
 }
 
+.input-checkbox_target:focus ~ .input-checkbox_visual {
+  border-color: #5dc2af;
+}
+
 .input-checkbox_visual_icon {
   position: absolute;
   width: 19px;
@@ -187,6 +191,10 @@ input.action_target {
   padding-right: 7px;
 }
 
+.filter:focus {
+  border: 1px solid #333;
+}
+
 .todo-header {
   text-align: center;
   margin: 0 auto;
@@ -214,7 +222,7 @@ input.action_target {
 }
 
 .__sublayer2 {
-  width: 588px;
+  width: 584px;
   height: 4px;
   z-index: 1;
 }

@@ -20,4 +20,7 @@
         padding-left: ($offset_2x - 1px);
         padding-right: ($offset_2x - 1px);
         }
+    .filter:focus {
+        border: 1px solid $c-gray-dark;
+    }
 
