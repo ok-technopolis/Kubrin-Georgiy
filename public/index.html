@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TODO</title>
+        <meta name="description" content="Todos web manager.">
+        <link rel="stylesheet" type="text/css" href="./dist/styles/default.css" />
+        <script src="dist/scripts/TODO_APP.js"></script>
+        <script src="dist/scripts/utils/extendConstructor.js"></script>
+        <script src="dist/scripts/utils/getTextNode.js"></script>
+        <script src="dist/scripts/modules/templatesEngine.js"></script>
+        <script src="dist/scripts/modules/l10n.js"></script>
+        <script src="dist/scripts/modules/Eventable.js"></script>
+        <script src="dist/scripts/components/AddTodos.js"></script>
+        <script src="dist/scripts/components/TodoItem.js"></script>
+        <script src="dist/scripts/components/TodoList.js"></script>
+        <script src="dist/scripts/components/Filter.js"></script>
+        <script src="dist/scripts/components/TodoActionsBar.js"></script>
+        <script src="dist/scripts/components/TodoMain.js"></script>
+        <script src="dist/scripts/main.js"></script>
+    </head>
+    
+    <script type="text/html" id="todoItemTemplate">
+    <div class="todo-item">
+        <div class="input-checkbox todo-item_ready-checker">
+            <input type="checkbox"
+                   class="input-checkbox_target js-todo-item_mark-ready"
+                   aria-label="Пометить как невыполненное" />
+            <div class="input-checkbox_visual">
+                <div class="input-checkbox_visual_icon"></div>
+            </div>
+        </div>
+
+        <div class="action todo-item_remove-action">
+            <div class="action_visual"></div>
+            <button class="action_target js-todo-item_remove-action" aria-label="Удалить todo"></button>
+        </div>
+
+        <div class="todo-item_text-w">
+            <div class="todo-item_text js-todo-item_text" contenteditable="true"></div>
+        </div>
+    </div>
+    </script>
+    
+    <body class="hover focus">
+        <div class="todo-header">
+            <h1 class="todos-title">todos</h1>
+        </div>
+        
+        <div class="todo-body js-todos-main">    
+            
+           <div class="todo-add">
+                <div class="action todo-add_select-all-action">
+                <div class="action_visual"></div>
+                    <button class="action_target js-todos-select-all" aria-label="Отметить все как выполненные"></button>
+                </div>
+                <div class="todo-add_input-w">
+                    <input class="todo-add_input js-todos-todo-input" placeholder="Добавить" aria-label="Поле добавления todo" />
+                </div>
+            </div>
+                
+            
+            <div class="todo-list js-todos-list">
+            </div>
+                
+            <div class="todos-actions-bar">
+                <div class="todos-actions-bar_counter js-todos-actions-bar_counter" aria-label="Количество не сделанных todo">
+                    0 задач
+                </div>
+
+                <button class="todos-actions-bar_clear-completed js-todos-actions-bar_clear-completed">Удалить завершённые</button>
+
+                <div class="todos-filters js-todos-actions-bar_filter">
+                    <button class="filter __active" data-filter="all" aria-label="Фильтр: показать все">Все</button>
+                    <button class="filter" data-filter="unready" aria-label="Фильтр: показать невыполненные">Невыполненные</button>
+                    <button class="filter" data-filter="ready" aria-label="Фильтр: показать выполненные">Выполненные</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="todo-body __sublayer1"></div>
+        <div class="todo-body __sublayer2"></div>
+    </body>
+</html>
