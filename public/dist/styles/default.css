@@ -64,6 +64,16 @@ a {
 /* /Reset.css
 ---------------------------------------------------------------------------------- */
 
+body {
+  background: #f5f5f5;
+}
+
+.main-wrapper {
+  max-width: 592px;
+  min-width: 212px;
+  margin: 0 auto;
+}
+
 .action {
   position: relative;
   display: inline-block;
@@ -78,14 +88,14 @@ a {
   height: 100%;
 }
 
-button.action_target,
-input.action_target {
+.action_target,
+.action_target {
   margin: 0;
   padding: 0;
   background: none;
   border: 0;
   outline: none;
-  opacity: 100;
+  opacity: 1;
 }
 
 .input-checkbox {
@@ -199,6 +209,39 @@ input.action_target {
 }
 
 .todo-body {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin: 0 16px 16px;
+}
+
+.todo-body:before,
+.todo-body:after {
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  top: 100%;
+  z-index: -1;
+}
+
+.todo-body:before {
+  height: 8px;
+  left: 4px;
+  right: 4px;
+}
+
+.todo-body:after {
+  height: 4px;
+  left: 2px;
+  right: 2px;
+}
+
+.todo-body:before,
+.todo-body:after {
+  content: '';
+}
+
+.todo-sublayer {
   border: 1px solid #e6e6e6;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   width: 592px;
@@ -214,7 +257,7 @@ input.action_target {
 }
 
 .__sublayer2 {
-  width: 588px;
+  width: 584px;
   height: 4px;
   z-index: 1;
 }
@@ -242,12 +285,7 @@ input.action_target {
   transition: opacity .2s;
 }
 
-.todo-add_select-all-action {
-  visibility: visible;
-}
-
 .todos-main.__has-todos .todo-add_select-all-action {
-  visibility: visible;
   opacity: 1;
 }
 

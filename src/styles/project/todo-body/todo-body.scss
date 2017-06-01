@@ -1,6 +1,37 @@
 @import "../../config/globals";
 
 .todo-body {
+    background: $c-todos-main-bg;
+    box-shadow: 0 2px 4px rgba(#000, .2);
+    position: relative;
+    margin: 0 $offset_4x $offset_4x;
+}
+    .todo-body:before,
+    .todo-body:after {
+        position: absolute;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(#000, .2);
+        top: 100%;
+        z-index: -1;
+    }
+    .todo-body:before {
+        height: 8px;
+        left: 4px;
+        right: 4px;
+    }
+
+    .todo-body:after {
+        height: 4px;
+        left: 2px;
+        right: 2px;
+    }
+
+    .todo-body:before,
+    .todo-body:after {
+        content: '';
+    }
+
+.todo-sublayer {
     border: 1px solid $c-common-border;
     box-shadow: 0 1px 2px rgba(0,0,0,0.5);
     width: $main-wrapper-width;
@@ -16,7 +47,7 @@
     }
 
     .__sublayer2 {
-        width: $main-wrapper-width - $offset;
+        width: $main-wrapper-width - $offset - $offset;
         height: $offset;
         z-index: 1;
     }

@@ -1,5 +1,5 @@
 {
-  "name": "preprocessor-stub",
+  "name": "todo",
   "version": "0.0.1",
   "description": "Stub for setting up preprocessor",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ok-technopolis/preprocessor-stub.git"
+    "url": "git@github.com:ok-technopolis/Kubrin-Georgiy.git"
   },
   "author": "",
   "license": "MIT",
