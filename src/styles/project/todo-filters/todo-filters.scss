@@ -1,0 +1,19 @@
+@import "../../config/globals";
+
+.todos-filters {
+        white-space: nowrap;
+        display: inline-block;
+        margin: $offset_2x 0;
+        }
+
+        .todos-filters .filter {
+            margin: 0 $offset;
+            }
+
+            .todos-filters .filter:first-child {
+                margin-left: 0;
+                }
+
+            .todos-filters .filter:last-child {
+                margin-right: 0;
+                }
